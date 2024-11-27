@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image";
 import { useEffect, useState } from "react"
 
 const page = () => {
@@ -22,11 +23,10 @@ const page = () => {
           data.map((currProduct) => {
             return (
               <div className="project-card" key={currProduct.id}>
-                <img src={currProduct.image} alt={currProduct.title} className="product-img" />
+                <Image src={currProduct.image} alt={currProduct.title} className="product-img" width={200} height={200} />
                 <h4>{currProduct.title}</h4>
                 <p>₹ {currProduct.price}</p>
                 <p>{currProduct.category}</p>
-                <p>{}</p>
               </div>
             )
           })

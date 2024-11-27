@@ -5,7 +5,7 @@ const page = () => {
     <section>
       <div className='container'>
         <h4 className='title-text'>Docs</h4>
-        <h4 className='question'>The Document Object Model (Dom)</h4>
+        <h4 className='question'>The Document Object Model Dom</h4>
         <p>As you already know the backbone of an HTML document is elements</p>
         <p>When an HTML document is loaded, the browser creates an HTML Document Object Model</p>
         <h4 className='question'>What is the Dom</h4>
@@ -30,12 +30,12 @@ const page = () => {
         <p>Load Event</p>
         <p>Change Event</p>
         <h4 className='question'>Select Element By Class Name</h4>
-        <p>The document.getElementByClassName() selects all elements with the given class name</p>
+        <p>The document.getElementByClassName selects all elements with the given class name</p>
         <p>Select Elements By Tag Name</p>
-        <p>The Document.getElementsByTagName() selects all elements with the given tag name</p>
+        <p>The Document.getElementsByTagName selects all elements with the given tag name</p>
         <p>Select Elements By Name</p>
         <h4 className='question'>Javascript Bom Location</h4>
-        <p>The <kbd>window.location()</kbd> object is used to return information about the current location of the page</p>
+        <p>The <kbd>window.location</kbd> object is used to return information about the current location of the page</p>
         <p>The location object contains the following properties</p>
         <p>Deep Down of the function in the main section of departments on area vice they feel good for art in the section </p>
         <ul>
