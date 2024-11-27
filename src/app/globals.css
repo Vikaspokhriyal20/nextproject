@@ -1,17 +1,14 @@
-*
-{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-li
-{
+li {
   list-style: none;
 }
 
-a
-{
+a {
   text-decoration: none;
   color: black;
   font-size: 0.9rem;
@@ -21,24 +18,19 @@ a
   transition: all 0.3s ease;
 }
 
-p
-{
+p {
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
 
-.active
-{
-  color:purple;
+.active {
+  color: purple;
   font-weight: 700;
   filter: drop-shadow(2px 1px 2px purple);
+}
 
-} 
-
-
-.heading-text
-{
+.heading-text {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -46,73 +38,107 @@ p
   filter: drop-shadow(2px 1px 2px purple);
 }
 
-.heading-notfound
-{
+.heading-notfound {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
   color: red;
-  filter: drop-shadow(2px 1px 2px red);
 }
 
-.loading-text
-{
+.loading-text {
   text-align: center;
   text-transform: uppercase;
   color: purple;
-  font-weight: 600; 
+  font-weight: 600;
   letter-spacing: 1px;
-  font-size: 1.2rem;
 }
 
-.logo-text
-{
-  color:purple;
+.logo-text {
+  color: purple;
   letter-spacing: 1px;
   filter: drop-shadow(2px 1px 2px purple);
   font-size: 1.5rem;
 }
 
-.container
-{
-  max-width:1000px;
-  margin:auto;
-  padding:1rem;
+.title-text {
+  text-align: center;
+  color: purple;
+  text-transform: uppercase;
 }
 
-.flex-nav
-{
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.w-400 {
+  max-width: 200px;
+
+}
+
+.flex-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.flex-btn > button {
+  padding: 0.4rem 0.6rem;
+  border: none;
+  outline: none;
+  background-color: white;
+  font-size: 1rem;
+}
+
+
+.flex-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 5rem;
 }
 
-.flex-link
-{
+.flex-link {
   display: flex;
   gap: 1rem;
 }
 
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+}
 
-.menu-bar
-{
+@media screen and (max-width:750px) {
+  .grid-4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width:550px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+.menu-bar {
   display: none;
 }
 
 @media screen and (max-width:650px) {
-  .flex-link
-  {
+  .flex-link {
     display: none;
   }
 
-  .menu-bar
-  {
+  .menu-bar {
     display: block;
   }
 
-  .small-screen-link ul
-  {
+  .small-screen-link ul {
     position: absolute;
     width: 100%;
     display: flex;
@@ -121,10 +147,110 @@ p
     top: 5rem;
     left: 0;
     z-index: 100;
-    background-color:aliceblue;
+    background-color: aliceblue;
     padding: 1rem;
   }
 }
 
+/* Project card css */
+
+.project-card {
+  background-color:white;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  padding: 1rem;
+  color: black;
+}
+
+
+.not-found {
+  text-align: center;
+}
+
+.not-found-btn {
+  border: none;
+  padding: 0.6rem 0.8rem;
+  background-color: purple;
+  cursor: pointer;
+  color: azure;
+  border-radius: 4px;
+}
+
+/* about  */
+
+.product-img
+{
+  width:8rem;
+  min-height:5rem;
+  aspect-ratio: 2/2;
+}
+
+/* contact  */
+
+.contact-form
+{
+  max-width:500px;
+  margin:auto;
+  background-color:white;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  display:flex;
+  flex-direction:column;
+  gap:1rem;
+  padding:2rem;
+  margin-top:2rem;
+}
+
+.input-box
+{
+  border:none;
+  outline:none;
+  padding:0.8rem 0.6rem;
+  color:black;
+  background-color:#f5f5f5;
+  font-size:0.8rem;
+  font-weight:700;
+}
+
+.input-box::placeholder
+{
+  color:black;
+  letter-spacing:1px;
+}
+
+.submit-btn
+{
+  border:none;
+  outline:none;
+  padding:0.6rem 0.8rem;
+  font-weight:700;
+  letter-spacing:1px;
+  background-color:purple;
+  color:white;
+  border-radius: 4px;
+  filter: drop-shadow(2px 2px 2px lightpink);
+}
+
+.question
+{
+  color: black;
+  font-weight:900;
+  color: crimson;
+}
+
+.product-name
+{
+  color: dodgerblue;
+  filter: drop-shadow(2px 2px 2px lightpink);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+}
+
+kbd
+{
+  background-color:#f5f5f5;
+  padding: 0.3rem;
+  border-radius: 4px;
+  font-weight: 700;
+}
 
 

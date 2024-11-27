@@ -41,11 +41,19 @@ const Header = () => {
                 Contact
               </Link>
             </li>
+            <li>
+              <Link href={'/docs'} className={pathname === '/docs' ? 'active' : ''}>
+                Docs
+              </Link>
+            </li>
           </ul>
         </nav>
-        <div className='menu-bar'><p onClick={handleToggle}>Menu</p></div>
+        <div className='menu-bar' onClick={handleToggle}>
+          <p>Menu</p>
+        </div>
       </div>
     </header>
+    // <div className='menu-bar'><p onClick={handleToggle}>Menu</p></div>
 
   )
 }
